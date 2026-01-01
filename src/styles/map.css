@@ -1,0 +1,15 @@
+.pa-map__inner {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.pa-map__preview img {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
+}
+.pa-map {
+  display: block;
+  flex: 1;
+}

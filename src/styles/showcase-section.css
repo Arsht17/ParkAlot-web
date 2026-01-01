@@ -1,0 +1,134 @@
+.parking-section {
+  width: 1384px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  height: 450px;
+}
+
+.parking-section__content {
+  flex: 1;
+  text-align: right;
+}
+
+.parking-section__title {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d0d0d;
+  letter-spacing: 1px;
+}
+
+.parking-section__text {
+  margin: 0 0 20px;
+  color: #4c4c4c;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.parking-section__brand {
+  color: #2f7af4;
+  font-family: "Bruno Ace", "Heebo", sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.parking-section__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+  color: #0d0d0d;
+}
+
+.parking-section__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.parking-section__item::before {
+  content: "◆";
+  color: #2f7af4;
+  font-size: 12px;
+}
+
+.parking-section__media {
+  width: 421px;
+  height: 402px;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(17, 42, 86, 0.18);
+  background-image: url("../assets/images/parking_img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.parking-section__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.parking-section__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 34, 0.2) 0%,
+    rgba(34, 34, 34, 0.2) 100%
+  );
+  backdrop-filter: blur(2px) brightness(100%) saturate(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%) saturate(100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.parking-section__media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 14px;
+  background: linear-gradient(
+    345deg,
+    rgba(197, 222, 237, 1) 0%,
+    rgba(115, 115, 115, 1) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@media (max-width: 900px) {
+  .parking-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .parking-section__media {
+    width: 100%;
+    height: auto;
+  }
+
+  .parking-section__image {
+    height: auto;
+  }
+}

@@ -1,0 +1,47 @@
+:root {
+  --back-color: rgba(251, 249, 254, 1);
+  --black-text-color: rgba(13, 13, 13, 1);
+  --btn-color: rgba(240, 238, 246, 1);
+  --drop-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  --grey-text: rgba(76, 76, 76, 1);
+  --primary-color: rgba(47, 122, 244, 1);
+  --red-color: rgba(237, 89, 91, 1);
+  --shadow-box: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  --unfocus-color: rgba(116, 114, 119, 1);
+  --white-text-color: rgba(250, 250, 250, 1);
+}
+
+.website {
+  background-color: var(--back-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.website__nav {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0 56px;
+  width: 100%;
+}
+
+.page {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .website__nav {
+    padding: 0 18px;
+    top: 10px;
+  }
+}
