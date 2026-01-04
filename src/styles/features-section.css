@@ -7,6 +7,9 @@
   width: 1384px;
   scroll-margin-top: 120px;
   height: 522px;
+
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .features-section .h {
@@ -102,12 +105,6 @@
   top: 213px !important;
 }
 
-.features-section.property-1-0-default,
-.features-section.property-1-0-variant-2 {
-  opacity: 1;
-  transition: opacity 200ms ease, transform 200ms ease;
-}
-
 @media (max-width: 1440px) {
   .features-section {
     width: 100%;
@@ -135,4 +132,8 @@
   .features-section .p-2 {
     text-align: center;
   }
+}
+
+.features-section:hover {
+  opacity: 1;
 }

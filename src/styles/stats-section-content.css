@@ -9,6 +9,9 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
+
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .stats-section .section__content {
@@ -255,4 +258,8 @@
   .stats-section .section__list {
     width: 100%;
   }
+}
+
+.stats-section .section:hover {
+  opacity: 1;
 }
