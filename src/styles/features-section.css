@@ -12,6 +12,10 @@
   transition: opacity 300ms ease;
 }
 
+.features-section.is-visible {
+  opacity: 1;
+}
+
 .features-section .h {
   align-items: center;
   display: inline-flex;
@@ -132,8 +136,4 @@
   .features-section .p-2 {
     text-align: center;
   }
-}
-
-.features-section:hover {
-  opacity: 1;
 }

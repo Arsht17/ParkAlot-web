@@ -5,9 +5,17 @@ import "../styles/stats-section-content.css";
 import googlePlay from "../assets/images/Google Play.png";
 import appStore from "../assets/images/Apple Inc.png";
 
-export default function StatsSection() {
+export default function StatsSection({
+  isVisible = false,
+  onReveal = () => {},
+}) {
   return (
-    <section className="stats-section" id="guide" dir="rtl">
+    <section
+      className={`stats-section ${isVisible ? "is-visible" : ""}`}
+      id="guide"
+      dir="rtl"
+      onMouseEnter={onReveal}
+    >
       <div className="stats-section__inner">
         <div className="section">
           <div className="section__content">

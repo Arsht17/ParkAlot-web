@@ -8,9 +8,17 @@ const bullets = [
   "זמינות 24/7 בערים מרכזיות",
 ];
 
-export default function ParkingShowcaseSection() {
+export default function ParkingShowcaseSection({
+  isVisible = false,
+  onReveal = () => {},
+}) {
   return (
-    <section className="parking-section" id="business" dir="rtl">
+    <section
+      className={`parking-section ${isVisible ? "is-visible" : ""}`}
+      id="business"
+      dir="rtl"
+      onMouseEnter={onReveal}
+    >
       <div className="parking-section__content">
         <h2 className="parking-section__title">חניה פשוטה לכולם</h2>
         <p className="parking-section__text">

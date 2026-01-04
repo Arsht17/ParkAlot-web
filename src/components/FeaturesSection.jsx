@@ -12,6 +12,8 @@ const DEFAULT_ICONS = {
 };
 
 export default function FeaturesSection({
+  isVisible = false,
+  onReveal = () => {},
   property1,
   className = "",
   text = "?",
@@ -29,8 +31,11 @@ export default function FeaturesSection({
   return (
     <section
       id="about"
-      className={`features-section property-1-0-${state.property1} ${className}`.trim()}
+      className={`features-section ${
+        isVisible ? "is-visible" : ""
+      } property-1-0-${state.property1} ${className}`.trim()}
       onMouseEnter={() => {
+        onReveal();
         dispatch("mouse_enter");
       }}
     >

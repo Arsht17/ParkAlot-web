@@ -12,6 +12,9 @@
   opacity: 0;
   transition: opacity 300ms ease;
 }
+.parking-section.is-visible {
+  opacity: 1;
+}
 
 .parking-section__content {
   flex: 1;
@@ -134,8 +137,4 @@
   .parking-section__image {
     height: auto;
   }
-}
-
-.parking-section:hover {
-  opacity: 1;
 }

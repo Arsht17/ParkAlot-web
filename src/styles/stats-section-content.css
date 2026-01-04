@@ -14,6 +14,10 @@
   transition: opacity 300ms ease;
 }
 
+.stats-section.is-visible .section {
+  opacity: 1;
+}
+
 .stats-section .section__content {
   align-items: center;
   align-self: stretch;
@@ -258,8 +262,4 @@
   .stats-section .section__list {
     width: 100%;
   }
-}
-
-.stats-section .section:hover {
-  opacity: 1;
 }
