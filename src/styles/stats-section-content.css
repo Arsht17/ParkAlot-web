@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  height: 100%;
+  min-height: 552px;
   padding: 42px 6px;
   position: relative;
   width: 100%;
@@ -30,10 +30,12 @@
 
 .stats-section .section__list {
   align-items: flex-start;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 32px;
   position: relative;
+  width: 100%;
+  max-width: 841px;
 }
 
 .stats-section .section__h {
@@ -43,7 +45,8 @@
   gap: 32px;
   justify-content: center;
   position: relative;
-  width: 841px;
+  width: 100%;
+  max-width: 841px;
 }
 
 .stats-section .section__header {
@@ -62,7 +65,7 @@
   color: #000000;
   direction: rtl;
   font-family: "Noto Sans Hebrew", "Heebo", sans-serif;
-  font-size: 30px;
+  font-size: clamp(24px, 1.98vw, 30px);
   font-weight: 700;
   letter-spacing: 2.7px;
   line-height: normal;
@@ -76,7 +79,7 @@
   color: var(--grey-text);
   direction: rtl;
   font-family: "Noto Sans Hebrew", "Heebo", sans-serif;
-  font-size: 20px;
+  font-size: clamp(16px, 1.32vw, 20px);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -86,27 +89,13 @@
 }
 
 .stats-section .section__list-2 {
-  height: 135px;
+  display: grid;
+  grid-template-columns: repeat(3, 244px);
+  justify-content: center;
+  gap: 25px;
   position: relative;
-  width: 841px;
-}
-
-.stats-section .card-s-instance {
-  left: 29px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.stats-section .card-s-2 {
-  left: 298px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.stats-section .card-s-4 {
-  left: 567px !important;
-  position: absolute !important;
-  top: 0 !important;
+  width: 100%;
+  max-width: 841px;
 }
 
 .stats-section .section__p-btns {
@@ -146,10 +135,12 @@
 
 .stats-section .section__btns-download {
   align-items: center;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   position: relative;
+  max-width: 100%;
 }
 
 .stats-section .store-button {
@@ -157,7 +148,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 8px px;
+  padding: 8px 14px;
   border-radius: 24px;
   border-top-style: solid;
   border-top-width: 1px;
@@ -169,6 +160,8 @@
   direction: ltr;
   height: 51px;
   width: 173px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .stats-section .section__btns-download :hover {
   background-color: #f6f6f6;
@@ -201,7 +194,8 @@
 
 .stats-section .stats-card {
   width: 244px;
-  height: 121px;
+  min-height: 121px;
+  height: auto;
   align-items: center;
   text-align: center;
   padding: 12px 10px;
@@ -244,22 +238,32 @@
 }
 
 @media (max-width: 900px) {
+  .stats-section .section {
+    min-height: 0;
+  }
+
   .stats-section .section__list-2 {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 16px;
   }
 
-  .stats-section .card-s-instance,
-  .stats-section .card-s-2,
-  .stats-section .card-s-4 {
-    position: static !important;
+  .stats-section .stats-card {
+    width: 100%;
   }
 
   .stats-section .section__h,
   .stats-section .section__list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-section .section__btns-download {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .stats-section .store-button {
     width: 100%;
   }
 }

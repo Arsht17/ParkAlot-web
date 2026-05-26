@@ -15,12 +15,19 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 192px;
-  padding: 92px 64px 0;
+  gap: clamp(64px, 12vw, 192px);
+  padding: 92px clamp(16px, 4.24vw, 64px) 0;
   position: relative;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   align-self: center;
   margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .body {
+    gap: 56px;
+    padding-top: 72px;
+  }
 }
