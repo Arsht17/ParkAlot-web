@@ -8,9 +8,8 @@
   margin: 0 auto;
   padding: 8px 32px;
   background-color: #22222233;
-  border-radius: 8px;
+  border-radius: 14px;
   position: relative;
-  overflow: hidden;
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
 }
@@ -19,11 +18,15 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 8px;
+  border-radius: 14px;
   padding: 1px;
   background: linear-gradient(345deg, rgba(197, 222, 237, 1) 0%, #737373 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
