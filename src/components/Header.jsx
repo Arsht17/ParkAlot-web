@@ -5,7 +5,7 @@ import qrImg from "../assets/images/image 8.png";
 
 export default function Header() {
   return (
-    <header className="header" aria-label="Hero section">
+    <header className="header" id="header" aria-label="Hero section">
       <video
         className="hero-video"
         src={heroVideo}

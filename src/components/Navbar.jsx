@@ -4,8 +4,8 @@ import vector from "../assets/icons/Vector.svg";
 
 const links = [
   { label: "אודות", href: "#about" },
-  { label: "הורדה", href: "#download" },
   { label: "לעסקים", href: "#business" },
+  { label: "הורדה", href: "#download" },
   { label: "צור קשר", href: "#contact" },
 ];
 
@@ -48,12 +48,16 @@ export default function Navbar() {
 
   return (
     <div className="navbar" dir="rtl">
-      <div className="navbar__brand">
+      <a
+        className="navbar__brand"
+        href="#header"
+        onClick={(event) => handleNavClick(event, "#header")}
+      >
         <div className="navbar__logo">
           <img src={vector} alt="PARKO logo" className="navbar__logo-img" />
         </div>
         <span className="navbar__title">PARKO</span>
-      </div>
+      </a>
 
       <nav className="navbar__links" aria-label="ראשי" dir="rtl">
         {links.map((link) => (

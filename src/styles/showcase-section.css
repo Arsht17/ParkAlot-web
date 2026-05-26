@@ -68,9 +68,10 @@
 }
 
 .parking-section__media {
-  width: 421px;
-  height: 402px;
-  flex: 0 1 421px;
+  width: min(421px, 34vw);
+  aspect-ratio: 421 / 402;
+  height: auto;
+  flex: 0 1 min(421px, 34vw);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 18px 40px rgba(17, 42, 86, 0.18);
@@ -135,10 +136,11 @@
   }
 
   .parking-section__media {
-    width: 100%;
+    width: min(100%, 421px);
     height: auto;
     aspect-ratio: 421 / 402;
     flex-basis: auto;
+    align-self: center;
   }
 
   .parking-section__image {
