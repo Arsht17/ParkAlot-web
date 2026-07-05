@@ -69,7 +69,12 @@ export default function Footer() {
           <div className="footer__socials-title">לעדכונים</div>
           <div className="footer__socials-icons">
             <a href="#x" aria-label="X">
-              <img className="footer__icon default" src={socialX} alt="" />
+              <img
+                className="footer__icon default"
+                src={socialX}
+                alt=""
+                aria-hidden="true"
+              />
               <img
                 className="footer__icon hover"
                 src={socialXBlue}
@@ -78,7 +83,12 @@ export default function Footer() {
               />
             </a>
             <a href="#facebook" aria-label="Facebook">
-              <img className="footer__icon default" src={socialFb} alt="" />
+              <img
+                className="footer__icon default"
+                src={socialFb}
+                alt=""
+                aria-hidden="true"
+              />
               <img
                 className="footer__icon hover"
                 src={socialFbBlue}
@@ -87,7 +97,12 @@ export default function Footer() {
               />
             </a>
             <a href="#instagram" aria-label="Instagram">
-              <img className="footer__icon default" src={socialIg} alt="" />
+              <img
+                className="footer__icon default"
+                src={socialIg}
+                alt=""
+                aria-hidden="true"
+              />
               <img
                 className="footer__icon hover"
                 src={socialIgBlue}

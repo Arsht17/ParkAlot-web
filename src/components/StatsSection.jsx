@@ -22,9 +22,9 @@ export default function StatsSection({
             <div className="section__list">
               <div className="section__h">
                 <header className="section__header">
-                  <p className="section__div">
+                  <h2 className="section__div">
                     מוכנים לשנות את חווית החניה שלכם?
-                  </p>
+                  </h2>
                   <p className="section__p">
                     הצטרפו לאלפי נהגים שגילו את הדרך הקלה ביותר לחנות בעיר.
                   </p>
@@ -74,7 +74,7 @@ export default function StatsSection({
                 <img
                   className="store-button__icon"
                   src={appStore}
-                  alt="apple store"
+                  alt=""
                   aria-hidden="true"
                 />
                 <span className="store-button__text">
@@ -91,7 +91,7 @@ export default function StatsSection({
                 <img
                   className="store-button__icon"
                   src={googlePlay}
-                  alt="google play"
+                  alt=""
                   aria-hidden="true"
                 />
                 <span className="store-button__text">

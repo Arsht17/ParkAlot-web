@@ -11,11 +11,11 @@ export default function Website() {
       <div className="website__nav">
         <Navbar />
       </div>
-      <div className="page">
+      <main className="page">
         <Header />
         <Body />
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }

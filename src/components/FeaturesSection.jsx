@@ -40,11 +40,11 @@ export default function FeaturesSection({
       }}
     >
       <div className="h">
-        <p className="p">
+        <h2 className="p">
           <span className="span">למה לבחור ב-</span>
           <span className="text-wrapper-2">PARKO</span>
           <span className="span">{text}</span>
-        </p>
+        </h2>
 
         <p className="p-2">
           דמיינו מחדש את החניה כדי להפוך אותה לפשוטה, מהירה וללא לחץ. הנה מה

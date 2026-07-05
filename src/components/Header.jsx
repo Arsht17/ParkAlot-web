@@ -20,7 +20,7 @@ export default function Header() {
 
       <div className="hero-section">
         <div className="hero-text">
-          <div className="h">מצא מקומות חניה בקלות</div>
+          <h1 className="h">מצא מקומות חניה בקלות</h1>
 
           <div className="p-wrapper">
             <p className="p">
@@ -41,7 +41,11 @@ export default function Header() {
         <p className="p-2">או פשוט לסרוק את הקוד</p>
 
         <div className="QR-CODE">
-          <img className="image" alt="QR code" src={qrImg} />
+          <img
+            className="image"
+            alt="QR code להורדת אפליקציית PARKO"
+            src={qrImg}
+          />
         </div>
       </div>
     </header>
