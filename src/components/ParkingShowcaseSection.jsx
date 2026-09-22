@@ -4,8 +4,8 @@ import parkingImg from "../assets/images/source/(Wooden Hands).png";
 
 const bullets = [
   "מעל 10,000 מקומות חניה ברשת שלנו",
-  "זמן תגובה ממוצע: 30 שניות",
-  "זמינות 24/7 בערים מרכזיות",
+  "הזמנה בתוך 30 שניות בממוצע",
+  "זמין 24/7 בערים מרכזיות",
 ];
 
 export default function ParkingShowcaseSection({
@@ -20,7 +20,7 @@ export default function ParkingShowcaseSection({
       onMouseEnter={onReveal}
     >
       <div className="parking-section__content">
-        <h2 className="parking-section__title">חניה פשוטה לכולם</h2>
+        <h2 className="parking-section__title">חניה ליד היעד שלכם</h2>
         <p className="parking-section__text">
           בין אם אתה נוסע לעבודה, קונה במרכז העיר או מבקר חברים,{" "}
           <span className="parking-section__brand">PARKO</span> מסיר את הלחץ

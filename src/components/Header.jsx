@@ -20,25 +20,23 @@ export default function Header() {
 
       <div className="hero-section">
         <div className="hero-text">
-          <h1 className="h">מצא מקומות חניה בקלות</h1>
+          <h1 className="h">מוצאים חניה בלי סיבובים</h1>
 
           <div className="p-wrapper">
             <p className="p">
-              תגיד שלום לנסיעות חסרות מטרה בחיפוש אחר חניה.
-              <br />
-              מצא והזמן מקומות חניה מיידית עם האפליקציה החכמה שלנו.
+              הופכים חניה לפשוטה, מהירה וללא לחץ לנהגים בכול מקום.
             </p>
           </div>
         </div>
 
         <div className="btns">
-          <button className="btn btn-download"> הורד אפליקציה</button>
+          <button className="btn btn-download">הורידו את PARKO</button>
           <button className="btn btn-show">צפה בהדגמה</button>
         </div>
       </div>
 
       <div className="QR">
-        <p className="p-2">או פשוט לסרוק את הקוד</p>
+        <p className="p-2">או סרקו את הקוד</p>
 
         <div className="QR-CODE">
           <img

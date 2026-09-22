@@ -47,8 +47,7 @@ export default function FeaturesSection({
         </h2>
 
         <p className="p-2">
-          דמיינו מחדש את החניה כדי להפוך אותה לפשוטה, מהירה וללא לחץ. הנה מה
-          שמבדיל אותנו.
+          מחיפוש לפי יעד ועד ניווט לחניה, PARKO עוזרת לכם למצוא מקום ולהזמין אותו מראש.
         </p>
       </div>
 
@@ -57,67 +56,43 @@ export default function FeaturesSection({
           className="card-instance"
           iconClassName={cardIconClassName}
           property1="default"
-          text="בטוח ומוגן"
-          text1={
-            <>
-              כל מיקומי החניה מאומתים ובטוחים. פרטיותך חשובה לנו ואנו מצפינים
-              <br />
-              נתונים רגישים ברמה גבוהה.
-            </>
-          }
+          text="מקומות חניה מאומתים"
+          text1="מקומות החניה ברשת נבדקים לפני שהם מוצגים. מידע רגיש נשמר בהצפנה."
         />
         <Card
           className="instance-node"
           iconClassName={cardIconClassNameOverride}
           property1="default"
-          text="חווית מובייל מתקדמת"
-          text1={
-            <>
-              אפליקציה אינטואיטיבית שתוכננה לגישה מהירה בזמן תנועה. פשוט,
-              <br />
-              מהיר ואמין.
-            </>
-          }
+          text="חיפוש מהנייד"
+          text1="אפליקציה אינטואיטיבית שתוכננה לגישה מהירה בזמן תנועה. פשוט, מהיר ואמין."
         />
         <Card
           className="card-2"
           iconClassName={cardDivClassName}
           property1="default"
-          text="איתור מיקום חכם"
-          text1="חיפוש מבוסס בינה מלאכותית מוצא את מקומות החניה הזמינים הקרובים ביותר בהתבסס על יעד והעדפות."
+          text="חיפוש לפי יעד"
+          text1="חיפוש מבוסס בינה מלאכותית מציג חניות זמינות לפי היעד וההעדפות שלכם."
         />
         <Card
           className="card-3"
           iconClassName={cardDivClassNameOverride}
           property1="default"
-          text="תזכורות חכמות"
-          text1={
-            <>
-              קבל התראה לפני שהחניה שלך פגה עם התראות הניתנות להתאמה
-              <br />
-              ואפשרויות הארכה קלות.
-            </>
-          }
+          text="תזכורת לפני הסיום"
+          text1="קבלו תזכורת לפני שזמן החניה מסתיים ובדקו אפשרות להארכה."
         />
         <Card
           className="card-4"
           iconClassName={cardIconClassName1}
           property1="default"
-          text="ניווט חכם לחניה"
-          text1="קבל ניווט מדויק לשער המתחם או למיקום החניה שלך כדי להגיע מהר וללא סיבוכים."
+          text="ניווט עד לחניה"
+          text1="קבלו מסלול עד לכניסה למתחם או למקום החניה שהזמנתם."
         />
         <Card
           className="card-5"
           iconClassName={cardIconClassName2}
           property1="default"
-          text="ניווט חכם לחניה"
-          text1={
-            <>
-              עדכוני זמינות חיים מבטיחים שלעולם לא תגיע ותמצא שהמקום השמור
-              <br />
-              שלך כבר תפוס.
-            </>
-          }
+          text="זמינות בזמן אמת"
+          text1="בדקו אילו מקומות פנויים לפני שאתם יוצאים לדרך."
         />
       </div>
     </section>

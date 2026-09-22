@@ -60,7 +60,7 @@ export default function Footer() {
             <span className="footer__brand-text">PARKO</span>
             <img className="footer__brand-icon" src={logo} alt="PARKO logo" />
           </div>
-          <p>הופכים חניה לפשוטה, מהירה וללא לחץ לנהגים בכל מקום.</p>
+          <p>הופכים חניה לפשוטה, מהירה וללא לחץ לנהגים בכול מקום.</p>
         </div>
       </div>
 
@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         <p className="footer__copyright">
-          <span>© 2025 </span>
+          <span>© 2026 </span>
           <span className="footer__brand-accent">PARKO</span>
           <span>. כל הזכויות שמורות.</span>
         </p>

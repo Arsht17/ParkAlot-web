@@ -48,7 +48,8 @@
 .hero-section {
   position: relative;
   z-index: 1;
-  max-width: 880px;
+  width: 100%;
+  max-width: 898px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -71,6 +72,12 @@
   letter-spacing: 6.48px;
   text-shadow: 0px 4px 4px #00000040;
   direction: rtl;
+}
+
+@media (min-width: 1200px) {
+  .h {
+    white-space: nowrap;
+  }
 }
 
 .p-wrapper {

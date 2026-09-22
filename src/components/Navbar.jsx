@@ -26,9 +26,16 @@ export default function Navbar() {
     const start = window.scrollY;
     const navHeight = nav ? nav.getBoundingClientRect().height : 0;
     const offset = navHeight + 24;
-    const end = target.getBoundingClientRect().top + start - offset;
-    const duration = 300;
+    const isTopLink = href === "#header";
+    const end = isTopLink
+      ? 0
+      : target.getBoundingClientRect().top + start - offset;
+    const duration = isTopLink
+      ? Math.min(1000, Math.max(450, Math.abs(end - start) * 0.5))
+      : 300;
     const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+    const easeInOutCubic = (t) =>
+      t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     let startTime;
 
     const step = (now) => {
@@ -36,7 +43,7 @@ export default function Navbar() {
         startTime = now;
       }
       const progress = Math.min((now - startTime) / duration, 1);
-      const eased = easeOutCubic(progress);
+      const eased = isTopLink ? easeInOutCubic(progress) : easeOutCubic(progress);
       window.scrollTo(0, start + (end - start) * eased);
       if (progress < 1) {
         requestAnimationFrame(step);

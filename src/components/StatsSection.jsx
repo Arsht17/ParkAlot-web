@@ -23,10 +23,10 @@ export default function StatsSection({
               <div className="section__h">
                 <header className="section__header">
                   <h2 className="section__div">
-                    מוכנים לשנות את חווית החניה שלכם?
+                    מוכנים להזמין חניה מראש?
                   </h2>
                   <p className="section__p">
-                    הצטרפו לאלפי נהגים שגילו את הדרך הקלה ביותר לחנות בעיר.
+                    בחרו מקום פנוי ליד היעד והגיעו אליו עם ניווט ישיר.
                   </p>
                 </header>
               </div>
@@ -44,7 +44,7 @@ export default function StatsSection({
                   iconClassName="stats-card__icon stats-card__icon--rating"
                   property1="default"
                   text="4.5/5"
-                  text1="דירוג האפליקציה"
+                  text1="דירוג אפליקציה"
                 />
                 <Card
                   className="stats-card card-s-4"
@@ -59,7 +59,7 @@ export default function StatsSection({
 
           <div className="section__p-btns" id="download">
             <p className="section__p-2">
-              <span className="text-wrapper-5">הורידו את </span>
+              <span className="text-wrapper-5">הורד את </span>
               <span className="text-wrapper-6">PARKO</span>
               <span className="text-wrapper-5"> עכשיו!</span>
             </p>
