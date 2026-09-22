@@ -141,12 +141,14 @@
 
 .QR {
   position: absolute;
-  right: 60px;
+  right: 64px;
   bottom: 86px;
-  width: 438px;
+  width: max-content;
   max-width: calc(100% - 48px);
   min-height: 124px;
   display: flex;
+  flex-direction: row;
+  direction: ltr;
   align-items: center;
   justify-content: center;
   gap: 24px;
@@ -231,10 +233,8 @@
     position: absolute;
     right: clamp(24px, 4.69vw, 48px);
     bottom: clamp(40px, 8.4vw, 86px);
-    width: clamp(300px, 42vw, 420px);
-    max-width: 420px;
+    max-width: calc(100% - 48px);
     min-height: auto;
-    aspect-ratio: 438 / 124;
     margin-top: 0;
     padding: clamp(10px, 1.17vw, 12px) clamp(16px, 2.34vw, 24px);
     gap: clamp(12px, 2.34vw, 24px);
@@ -269,12 +269,9 @@
     position: relative;
     right: auto;
     bottom: auto;
-    width: min(100%, 360px);
     max-width: 100%;
     min-height: 96px;
-    aspect-ratio: auto;
     margin-top: 32px;
-    flex-direction: row;
   }
 
   .QR-CODE {
